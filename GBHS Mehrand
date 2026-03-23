@@ -116,7 +116,6 @@ function login(){
     alert("Teacher login");
   }
   else if(role=="student"){
-    // student login by roll
     const roll=pass;
     db.collection("students").where("roll","==",roll)
     .get().then(snap=>{
